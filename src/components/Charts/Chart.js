@@ -10,7 +10,8 @@ import { Legend } from './Legend';
 export const Chart = ({ width, height, margin, data }) => {
   const [, setWidth] = useRecoilState(widthAtom);
   const [, setHeight] = useRecoilState(heightAtom);
-  const [, setMargin] = useRecoilState(marginAtom);
+  const [, setMargin] = useRecoilState(marginAtom);   
+
 
   useEffect(() => {
     setWidth(width);
